@@ -1,4 +1,29 @@
-<style>
+ul.nav {
+  list-style-type: none;
+  widith: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #25CED1;
+  margin: 0;
+}
+
+li.nav{
+  display: inline;
+  padding: 10px;
+  margin: 50px;
+}
+
+
+a{
+  text-decoration: none;
+  color: red;
+  font-size: 120%;
+}
+
+
+
+
  div.stat{
     position: absolute;
     top: 780px;
@@ -75,4 +100,4 @@
     font-size: 50px;
     left: 192px;
   }
-</style>
+
