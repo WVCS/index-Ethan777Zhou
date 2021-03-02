@@ -1,1 +1,78 @@
-
+<style>
+ div.stat{
+    position: absolute;
+    top: 780px;
+    left: 970px;
+    
+  }
+ div.image {
+  position: absolute;
+  top: 270px;
+  left: 850px;
+  z-index: 100;
+  
+ }
+  div.info {
+    
+    position: absolute;
+    top: 250px;
+    width: 50%;
+    background-color: #62b6cb;
+    padding: 8px;
+    font-size: 25px;
+    border: solid #175676 6px;
+    border-radius: 10px;
+    
+  }
+  div.counter {
+     position: absolute;
+    top: 780px;
+    width: 50%;
+    background-color: #62b6cb;
+    padding: 8px;
+    font-size: 25px;
+    border: solid #175676 6px;
+    border-radius: 10px;
+    
+  }
+  div.image_2 {
+    position: absolute;
+    top: 1220px;
+    left: 20px;
+    padding: 20px;
+  }
+  div.action {
+    position: absolute;
+    top: 1290px;
+    background-color: #62b6cb;
+    width: 49%;
+    left: 700px;
+    font-size: 25px;
+    padding: 8px;
+    border: solid #175676 6px;
+    border-radius: 10px;
+  }
+  div.title1 {
+    position: absolute;
+    top: 175px;
+    left: 35px;
+    text-decoration: underline;
+  }
+  div.title2 {
+    position: absolute;
+    top: 705px;
+    left: 35px;
+    text-decoration: underline;
+  }
+  div.title3 {
+    position: absolute;
+    top: 1215px;
+    left: 735px;
+    text-decoration: underline;
+  }
+  div.heading {
+    position: absolute;
+    font-size: 50px;
+    left: 192px;
+  }
+</style>
