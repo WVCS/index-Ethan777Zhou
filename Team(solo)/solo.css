@@ -1,0 +1,110 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: antiquewhite;
+}
+.list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+       }
+.link{
+  float: right;
+      }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(34,34,34,1);
+  border: 3px solid black;
+  z-index: 500;
+  height: auto;
+  min-height: 40px;
+      }
+h1 {
+  position: absolute;
+  top: 50px;
+}
+.logo {
+  position: relative;
+  width: 30vw;
+  top: 10px;
+  min-height: 25px;
+  min-width: 230px;
+}
+.menu_icon {
+  width: 6vw;
+  min-height: 40px;
+  min-width: 40px;
+}
+.logo_tab {
+  position: relative;
+  width: 56.5%;
+}
+img {
+  min-height: 25px;
+}
+.dropbtn {
+  background-color: rgba(34,34,34,1);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  background-color: rgba(34,34,34,1);
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(65,61,55,1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(65,61,55,1);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #d57425;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgba(74,68,62, 1);}
+
+ .site-links {
+  position: relative;
+  text-align: center;
+  top: 30px;
+  font-weight: bold;
+  font-size: 2vw;
+  width: 100%;
+   color: white;
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  position: relative;
+  top: 50px;
+  grid-gap: 20px;
+  color: white;
+}
+.footer-box {
+  text-decoration: none;
+  font-size: 1vw;
+  
+}
+.footer-box:hover {
+  color: #d57425;
+    }
+.footer {
+  background-image: url(//cache.umusic.com/_sites/_halo/imaginedragons/v3b/images/bg-signup2.jpg);
+}
+@media(max-width:540px){.footer-box{font-size: 15px;}.logo_tab{width:73%;}.site-links{font-size: 25px;}}
