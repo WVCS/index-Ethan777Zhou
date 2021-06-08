@@ -3,6 +3,111 @@
   <title> LEONARDO TAB </title>
    <link rel="stylesheet" href="style.css">
   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  
+  body {
+  background-color: #006661;
+}  
+  
+  </style> 
 </head>
 
 <body>
@@ -20,77 +125,109 @@
   </ul>
   
 <center>
-<table>
-  <tr>
-    <th>Movie Name</th>
-    <th>Movie Poster</th>
-  </tr>
-  <tr>
-      <td class="title"> Romeo + Juliet </td>
-      <td> <center> <img src="https://i.pinimg.com/736x/31/9d/2f/319d2f4710c1f26551eeb67f0a0574c8.jpg"> </center> </td>
-    </tr>
-    <tr>
-      <td class="title"> Titanic </td>
-      <td> <center> <img src="https://m.media-amazon.com/images/I/717KH+f1fkL._AC_SY741_.jpg" > </center> </td>
-    </tr>
-    <tr>
-      <td class="title"> Shutter Island </td> 
-      <td> <center> <img src="https://images-na.ssl-images-amazon.com/images/I/51MsI8xR-NL._AC_.jpg" ></center> </td>
-    </tr>
-    <tr>
-      <td class="title"> Inception </td>
-      <td> <center><img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" > </center></td>
-    </tr> 
-     <tr>
-      <td class="title"> The Great Gatsby </td>
-      <td> <center><img src="https://miro.medium.com/max/395/1*LqftzSqCsgsugascGnRKAQ.png" > </center></td>
-    </tr> 
-    <tr>
-      <td class="title"> The Wolf of Wall Street </td>
-      <td> <center><img src="https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png" ></center> </td>
-    </tr>
-      <tr>
-      <td class="title"> The Revenant </td>
-      <td> <center><img src="https://images-na.ssl-images-amazon.com/images/I/51hEO4AolLL._AC_.jpg" > </center></td>
-    </tr>
-    <tr>
-      <td class="title"> Once Upon A Time In... Hollywood </td>
-      <td> <center><img src="https://thefridacinema.org/wp-content/uploads/2019/12/Once-Upon-A-Time-in-Hollywood-poster.jpg" > </center></td>
-    </tr>
-        <tr>
-      <td class="title"> Django Unchained </td>
-      <td> <center><img src="https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UY1200_CR90,0,630,1200_AL_.jpg" > </center></td>
-    </tr>
   
-</table>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 9</div>
+  <img src="https://i.pinimg.com/736x/31/9d/2f/319d2f4710c1f26551eeb67f0a0574c8.jpg" style="width:100%">
+  <div class="text">Romeo + Juliet</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 9</div>
+  <img src="https://m.media-amazon.com/images/I/717KH+f1fkL._AC_SY741_.jpg" style="width:100%">
+  <div class="text">Titanic</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 9</div>
+  <img src="https://images-na.ssl-images-amazon.com/images/I/51MsI8xR-NL._AC_.jpg" style="width:100%">
+  <div class="text">Shutter Island</div>
+</div>
+  
+  <div class="mySlides fade">
+  <div class="numbertext">4 / 9</div>
+  <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" style="width:100%">
+  <div class="text">Inception</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 9</div>
+  <img src="https://miro.medium.com/max/395/1*LqftzSqCsgsugascGnRKAQ.png" style="width:100%">
+  <div class="text">The Great Gatsby</div>
+</div>  
+  
+  <div class="mySlides fade">
+  <div class="numbertext">6 / 9</div>
+  <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png" style="width:100%">
+  <div class="text">The Wolf of Wall Street</div>
+</div>  
+  
+   <div class="mySlides fade">
+  <div class="numbertext">7 / 9</div>
+  <img src="https://images-na.ssl-images-amazon.com/images/I/51hEO4AolLL._AC_.jpg" style="width:100%">
+  <div class="text">The Revenant</div>
+</div>
+  
+   <div class="mySlides fade">
+  <div class="numbertext">8 / 9</div>
+  <img src="https://thefridacinema.org/wp-content/uploads/2019/12/Once-Upon-A-Time-in-Hollywood-poster.jpg" style="width:100%">
+  <div class="text">Once Upon A Time in Hollywood</div>
+</div>
+  
+   <div class="mySlides fade">
+  <div class="numbertext">9 / 9</div>
+  <img src="https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UY1200_CR90,0,630,1200_AL_.jpg" style="width:100%">
+  <div class="text">Django Unchained</div>
+</div>
+  
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
   </center>
 
 </body>
 
 
 
-<style>
-
-table, th, td {
-  border: 1px solid black;
-  width: 50%; 
-}
-
-h1 {
-  text-align: center;
-  }
-  
-body {
-  background-color: #006661;
-}  
-  
-  img {
-    width: 40%;
-    heightL 40%;
-  }
-
-
-</style>
 
 
 
